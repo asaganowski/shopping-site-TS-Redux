@@ -2,7 +2,7 @@ import React from 'react'
 import "./Cart.scss"
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { Product } from '../../features/products/types';
-import { BsFillDashCircleFill,BsPlusCircleFill,BsTrash } from 'react-icons/bs';
+import { BsPlusLg,BsDashLg,BsTrash } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { addToCart, decrease, removeAll } from '../../features/cart/cartSlice';
 import { CartIcon } from '../../icons/CartIcon';
@@ -72,9 +72,9 @@ function Cart() {
                       
                       <h6>$ {item.price.toFixed(2)}</h6>
                       <div className="quantity-info">
-                        <button onClick={() => handleDecrease(item)}><BsFillDashCircleFill /></button>
+                        <button onClick={() => handleDecrease(item)}><BsDashLg /></button>
                         <h6 className='quantity'>{item.cartQuantity}</h6>
-                        <button onClick={() => handleIncrease(item)}><BsPlusCircleFill /></button>
+                        <button onClick={() => handleIncrease(item)}><BsPlusLg /></button>
                       </div>
                       <h6>$ {(item.price*item.cartQuantity).toFixed(2)}</h6>
                     </div>
