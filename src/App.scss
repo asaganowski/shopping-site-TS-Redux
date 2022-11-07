@@ -1,0 +1,34 @@
+:root{
+  --special-color: rgb(146, 55, 78);
+  --grey-color: rgb(119, 119, 119);
+  --page-color: #f0e8e8;
+}
+
+body{
+
+  overflow-x: hidden;
+  background-color: var(--page-color);
+  //color:rgb(0, 0, 0);
+  .app{
+    .page {
+
+      background-color: var(--page-color);
+
+      a, button{
+        cursor: pointer;
+      }
+
+      button:hover{
+        opacity: 0.9;
+      }
+    
+      .pageNotFound{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+}

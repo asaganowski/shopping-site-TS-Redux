@@ -1,0 +1,53 @@
+.popup-wrapper{
+
+    position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        background-color: rgba(0,0,0,0.7);
+        width:100%;
+
+    .popup-content{
+
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        h4{
+            text-align: center;
+        }
+    
+        .links{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width:300px;
+    
+            .popup-btn{
+                padding:6px;
+                border-radius: 5px;
+            }
+    
+            .goto-bag-link{
+    
+                .goto-bag-btn{
+                    border: white;
+                    color: var(--special-color);
+                    background-color: white;
+                }
+            }
+    
+            .continue-link{
+                .continue-btn{
+                    border: var(--special-color);
+                    background-color: var(--special-color);
+                    color: white;
+                }
+            }
+        }
+    
+    }
+}
